@@ -1,0 +1,273 @@
+/*************************** DEFAULTS ********************************/
+
+/*remove default setting*/
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+}
+
+/****************************************************** Home page ******************************************************/
+
+/************************************ NAV BAR AND HEADER ****************************************/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+.header {
+	position: fixed;
+}
+
+nav {
+	display: flex; /*To make logo and list become next to each other */
+
+	height: 10vh;
+	background: #1e1d5a;
+	position: fixed;
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+}
+
+.logo {
+	color: #ebe4e4;
+	text-transform: uppercase; /*make letters uppercase*/
+	letter-spacing: 5px; /*make space bettwen letters*/
+	font-size: 20px;
+	margin-top: 3.5vh;
+	margin-bottom: 3.3vh;
+	margin-left: 5vw;
+	font-weight: bold;
+}
+.logo span {
+	color: #8583e1;
+}
+.nav-links {
+	display: flex; /*to make links goes horizontally */
+	list-style: none; /*to remove the dots beside the links */
+	width: 57%;
+	height: 100%;
+	justify-content: space-around; /*to make horizontal space betwen the links */
+	align-items: center; /* to center the links in the nav*/
+	margin-left: auto; /* to locate the links in the left of nav bar*/
+}
+
+.nav-links li a {
+	color: #ffffff;
+	text-decoration: none; /*to remove the lines under the links*/
+	padding-top: 3.8vh;
+	padding-bottom: 3.3vh;
+	padding-left: 7vw;
+	padding-right: 7vw;
+}
+
+.nav-links a:hover {
+	background-color: #454481;
+	color: #ffffff;
+}
+.menu {
+	display: none;
+}
+
+/*make burger menu shape*/
+.menu div {
+	width: 25px;
+	height: 3px;
+	background-color: #ebe4e4;
+	margin: 5px; /*to make space betwen the lines*/
+	transition: all 0.3s ease; /*To animate the menu buuton when we click it*/
+}
+
+.toggle .line1 {
+	transform: rotate(-90deg) translate(-10px, 6px);
+}
+.toggle .line2 {
+	transform: rotate(-90deg) translate(-1.9px, 13px);
+}
+.toggle .line3 {
+	transform: rotate(-90deg) translate(6px, 20px);
+}
+
+/********************************IMAGE AND INFORMATION*******************************************/
+
+.left {
+	width: 95vw; /*Adjust the left class width*/
+	height: 65vh;
+	/*Adjust the left class hight*/
+	background: #100f3a; /*Adjust the background color!*/
+	margin: 0vh 0vw 0vh 2vw;
+	padding-top: 0vh;
+	padding-bottom: 0vh;
+}
+
+i {
+	margin-right: 3%; /*To add some space betwen icons and the text*/
+	display: inline-block;
+	color: #a4a4df;
+}
+.general_info_text,
+.general_info_text a {
+	font-size: 14px;
+	color: #7a798c;
+	line-height: 1.2;
+}
+
+.general_info_text a {
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.general_info_text a:hover {
+	color: #ffffff;
+}
+.white {
+	color: #ffffff;
+}
+.break {
+	color: #7a798c;
+}
+.fa-facebook {
+	padding-left: 7.5vw;
+}
+
+.fa-map-marker {
+	margin-right: 4%; /*To add some space betwen icons and the text*/
+}
+.fa-id-badge {
+	margin-right: 3.3%; /*To add some space betwen icons and the text*/
+}
+.left img {
+	background: #ffffff;
+	width: 273px;
+	margin-top: -38vh;
+	margin-bottom: 0vh;
+	margin-left: 5vw;
+	margin-right: 0vh;
+	padding-bottom: 0vh;
+	padding-right: 0vh;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.general_info_content {
+	display: inline-block;
+	width: 57vw;
+	height: 50vh;
+	margin-top: 7vh;
+	margin-right: 0%;
+	padding-right: 0%;
+	padding-left: 2vw;
+	padding-top: 4vh;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	color: #e9e7e3;
+	background: #100f3a;
+}
+
+.general_info_list li {
+	list-style: none; /*to remove the dots beside the links */
+}
+
+.social_container li {
+	list-style: none; /*to remove the dots beside the links */
+}
+.general_info_title {
+	font-size: 15px;
+	margin-right: 0%;
+	padding-right: 0%;
+	align-items: center;
+	font-weight: bold;
+	margin-left: 23vw;
+	padding-top: 3vh;
+	padding-bottom: 4vh;
+}
+.general_info_text {
+	margin-right: 0%;
+	margin-left: 7vw;
+	margin-top: 2vh;
+	margin-bottom: 3vh;
+	padding-right: 0%;
+}
+.social_container {
+	margin-top: 2vh;
+	padding-left: 2vw;
+	font-size: 14px;
+	color: #7a798c;
+	line-height: 1.2;
+}
+.social-text {
+	margin-right: 2vw;
+	margin-left: 7.5vw;
+}
+.social_container ul li:not(:last-child) {
+	margin-right: 28px;
+}
+.social_container ul li a i {
+	font-size: 18px;
+	color: #8d8b9b;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.social_container ul li a i:hover {
+	color: #ffffff;
+}
+
+/********************************DESCRIPTION*******************************************/
+
+.main_subtitle {
+	font-size: 30px;
+	font-weight: 500;
+	color: #7a798c;
+	line-height: 0.75;
+}
+.main_title {
+	font-size: 73px;
+	color: #100f3a;
+	line-height: 0.75;
+	margin-top: 12px;
+	font-weight: 800;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.main_content {
+	background-color: #faf3f3;
+	height: 100%;
+	margin-left: 2vw;
+	margin-right: 1.7vw;
+	padding: 15px;
+	padding-left: 8vw;
+	padding-right: 8vw;
+}
+.main_title_container {
+	width: 100%;
+	height: 193px;
+	padding-top: 10vh;
+	font-weight: bold;
+}
+
+.about_title {
+	font-size: 27px;
+	font-weight: 700;
+	color: #100f3a;
+}
+.about_text {
+	margin-top: 5vh;
+}
+
+/*************************FOOTER**************************************************/
+
+.footer {
+	display: block;
+	text-align: center;
+	background-color: #0e142f;
+	width: 100%;
+	height: 10vh;
+	color: #fdfdfd;
+	margin-bottom: 0vh;
+	padding-bottom: 0vh;
+	padding-top: 3.5vh;
+}
